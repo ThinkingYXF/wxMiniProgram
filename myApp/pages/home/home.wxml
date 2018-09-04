@@ -1,0 +1,28 @@
+<!-- import 引入template模板-->
+<!-- include 引入整个wxml代码(类似iframe)-->
+<import src="../template/template.wxml" />
+<!-- wxs js脚本(引入wxs文件)src只能为相对路径 -->
+<wxs src="../template/template.wxs" module="myWxs" />
+
+<!-- 直接编写 wxs -->
+<wxs module="m1">
+  var msg = "hello wxs";
+  module.exports.message = msg;
+</wxs>
+<view>{{m1.message}}</view>
+
+<view class='container'>
+  <text>This is home page!</text>
+  <view>
+    <template is="testTemplate" data="{{...item}}"></template>
+  </view>
+
+  <my-component inner-text="I am a customize component">
+    <!-- 组件内部节点 -->
+    <view slot="before">我是内部节点1</view>
+    <view slot="after">我是内部节点2</view>
+  </my-component>
+</view>
+<view>
+  <text>{{myWxs.go("yxf")}}</text>
+</view>

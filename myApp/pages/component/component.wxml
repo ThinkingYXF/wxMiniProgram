@@ -1,0 +1,6 @@
+<view>
+  <!-- <slot> 节点，用于承载组件引用时提供的子节点 -->
+  <slot name="before"></slot>
+  <text class='text'>{{innerText}}</text>
+  <slot name="after"></slot>
+</view>

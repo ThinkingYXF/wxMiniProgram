@@ -1,0 +1,7 @@
+var str = "This is a wxs file";
+function output(name){
+  return "hello " + name + " " + str;
+}
+module.exports = {
+  go: output
+};

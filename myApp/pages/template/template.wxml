@@ -1,0 +1,4 @@
+<template name="testTemplate">
+  <view>{{ text }}</view>
+  <view wx:for="{{array}}">{{item}}</view>
+</template>

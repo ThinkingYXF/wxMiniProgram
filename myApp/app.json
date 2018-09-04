@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabbar": {
+    "color": "black",
+    "selectedColor": "green",
+    "backgroundColor": "white",
+    "position": "bottom",
+    "list": [{
+      "pagePath": "pages/logs/logs",
+      "text": "日志"
+    },{
+      "pagePath": "pages/home/home",
+      "text": "主页"
+    }]
+  },
+  "debug": true
+}
