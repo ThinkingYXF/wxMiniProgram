@@ -1,0 +1,9 @@
+.time{
+	font-size: 45px;
+}
+.start{
+	margin: 0 10px 0 20px;
+}
+.stop{
+	margin-right: 10px;
+}

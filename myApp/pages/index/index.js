@@ -20,6 +20,24 @@ Page({
       url: '../home/home',
     })
   },
+  startGame: function(){
+    wx.navigateTo({
+      url: '../tensecond/tensecond'
+    });
+  },
+  getInfo: function(){
+    wx.getSystemInfo({
+      success: res => {
+        console.log(res);
+      }
+    });
+    wx.addPhoneContact({
+      success: res => {
+        console.log(res);
+      }
+    });
+    wx.scanCode();
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
