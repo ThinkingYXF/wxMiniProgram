@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/home/home",
-    "pages/tensecond/tensecond"
+    "pages/tensecond/tensecond",
+    "pages/findWorkers/findWorkers"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -11,17 +12,26 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
   },
-  "tabbar": {
+  "tabBar": {
     "color": "black",
     "selectedColor": "green",
     "backgroundColor": "white",
     "position": "bottom",
     "list": [{
-      "pagePath": "pages/logs/logs",
-      "text": "日志"
+      "pagePath":"pages/index/index",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/homeSelected.png",
+      "text":"主页"
     },{
-      "pagePath": "pages/home/home",
-      "text": "主页"
+      "pagePath": "pages/findWorkers/findWorkers",
+      "iconPath": "images/category.png",
+      "selectedIconPath": "images/categorySelected.png",
+      "text": "项目"
+    },{
+      "pagePath": "pages/tensecond/tensecond",
+      "iconPath": "images/setup.png",
+      "selectedIconPath": "images/setupSelected.png",
+      "text": "游戏"
     }]
   },
   "debug": true

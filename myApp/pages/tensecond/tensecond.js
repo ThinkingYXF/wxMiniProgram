@@ -57,8 +57,10 @@ Page({
 				success: function(res) {
 					if (res.confirm) {
 						console.log('用户点击确定');
+            this.timer(null, null, true);
 					} else if (res.cancel) {
 						console.log('用户点击取消');
+            this.timer(null, null, true);
 					}
 				}
 			});

@@ -11,20 +11,12 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
+    //跳转页面
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
-  startProgram: function(){
-    wx.navigateTo({
-      url: '../home/home',
-    })
-  },
-  startGame: function(){
-    wx.navigateTo({
-      url: '../tensecond/tensecond'
-    });
-  },
+  //获取用户权限（信息）
   getInfo: function(){
     wx.getSystemInfo({
       success: res => {

@@ -1,0 +1,13 @@
+<view class='section'>
+  <!-- <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}"
+    interval='{{interval}}' duration="{{duration}}">
+    <block wx:for="{{itemUrls}}">
+      <swiper-item>
+        <image src='{{item}}' width="414" />
+      </swiper-item>
+    </block>
+  </swiper> -->
+  <image src='../../images/background.jpg'></image>
+  <text class='title'>物流招聘</text>
+  <text class='content'>15000000000</text>
+</view>
